@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "F";
+  src: url("../assets/fonts/f.woff2") format("woff2"),
+    url("../assets/fonts/f.woff") format("woff");
+}
+
 html {
   box-sizing: border-box;
 }
@@ -9,7 +15,29 @@ html {
 
 body {
   margin: 0;
-  font-family: "Helvetica", "Helvetica Neue", sans-serif;
+  font-family: "F", "Helvetica", "Helvetica Neue", sans-serif;
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+button,
+input {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  text-transform: uppercase;
+  padding: 2px 12px;
+  margin: 0;
 }

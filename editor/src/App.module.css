@@ -22,14 +22,19 @@
   justify-content: stretch;
 }
 
-.flag {
+.left {
   width: 30%;
   flex-basis: 30%;
   flex-shrink: 0;
   margin: 0 10px 0 0;
 }
-.flag h3 {
-  margin: 0 0 17px 0;
+
+.flag {
+  width: 100%;
+  height: auto;
+}
+h3.name {
+  margin: 0 0 17px 2px;
 }
 .flag img {
   max-width: 100%;
@@ -43,7 +48,7 @@
   align-items: center;
   margin-bottom: 20px;
 }
-.utils span {
+.utils h3 {
   flex-grow: 1;
 }
 .utils button,
@@ -61,8 +66,9 @@
 .color {
   cursor: grab;
   border-radius: 4px;
+  overflow: hidden;
   background-color: #efefef;
-  margin: 0 10px 10px 0;
+  margin: 0 4px 4px 0;
   white-space: nowrap;
   padding-right: 15px;
   display: flex;
@@ -76,16 +82,12 @@ body > .color {
   cursor: grabbing;
 }
 .swatch {
-  /* border: 1px solid gray; */
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 100px;
+  height: 50px;
   margin-right: 10px;
-}
-
-.root button,
-.root input {
-  font-family: inherit;
-  padding: 2px 12px;
-  margin: 0;
+  border-top: 1px solid #f4f4f4;
+  border-bottom: 1px solid #f4f4f4;
+  border-left: 1px solid #f4f4f4;
+  border-radius: 4px 0 0 4px;
 }

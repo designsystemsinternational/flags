@@ -7,6 +7,18 @@ import _flags from "../../flags";
 
 import css from "./App.module.css";
 
+export const Flag = ({ name }) => {
+  const path = `../../flag/${name}.svg?component`;
+  const [svgFlag, setFlag] = useState(null);
+  useEffect(() => {
+    (async () => {
+      const flag = await import(path);
+      setFlag(flag.default);
+    })();
+  }, []);
+  return svgFlag || null;
+};
+
 export const App = () => {
   const [flags, setFlags] = useState(() => {
     if (window.localStorage.getItem("flags")) {
@@ -102,15 +114,13 @@ export const App = () => {
       {flags.map((flag, i) => {
         return (
           <div key={i} className={css.row}>
-            <figure className={css.flag}>
-              <h3>{flag.name}</h3>
-              <img src={`/${flag.name}.svg`} />
-            </figure>
+            <div className={css.left}>
+              <h3 className={css.name}>{flag.name}</h3>
+              <img className={css.flag} src={`/${flag.name}.svg`} />
+            </div>
             <div className={css.right}>
               <div className={css.utils}>
-                <span style={{ marginRight: 10 }}>
-                  {flag.colors.length} colors
-                </span>
+                <h3 style={{ marginRight: 10 }}>{flag.colors.length} colors</h3>
                 {flag.colors.length > 3 && (
                   <button onClick={() => onLimit(flag.name)}>limit to 3</button>
                 )}
