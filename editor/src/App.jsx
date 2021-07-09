@@ -32,6 +32,15 @@ export const App = () => {
     setFlags(_flags);
   };
 
+  const onResetFlag = (name) => {
+    setFlags(
+      produce((draft) => {
+        const flag = draft.find((f) => f.name == name);
+        flag.colors = _flags.find((f) => f.name == name).colors;
+      })
+    );
+  };
+
   const onSortEnd = (name, { oldIndex, newIndex }) => {
     setFlags(
       produce((draft) => {
@@ -54,6 +63,18 @@ export const App = () => {
     );
   };
 
+  const onAddColor = (e, name) => {
+    if (e.key == "Enter") {
+      setFlags(
+        produce((draft) => {
+          const flag = draft.find((f) => f.name == name);
+          if (flag) {
+            flag.colors.push(e.target.value);
+          }
+        })
+      );
+    }
+  };
   const onLimit = (name) => {
     setFlags(
       produce((draft) => {
@@ -66,44 +87,55 @@ export const App = () => {
   };
 
   return (
-    <div>
-      <header>
+    <div className={css.root}>
+      <header className={css.header}>
         <h2>Country Flags</h2>
-        <button onClick={() => setShow(!show)}>toggle</button>
-        <button onClick={onCopy}>
-          {copy ? "copied to clipboard" : "copy"}
+        <button onClick={() => setShow(!show)}>
+          {show ? "show code" : "hide code"}
         </button>
-        <button onClick={onReset}>reset</button>
+        <button onClick={onCopy}>
+          {copy ? "copied JSON to clipboard!" : "copy JSON"}
+        </button>
+        <button onClick={onReset}>reset all</button>
       </header>
       {show && <pre className={css.code}>{JSON.stringify(flags, null, 2)}</pre>}
       {flags.map((flag, i) => {
         return (
           <div key={i} className={css.row}>
-            <img className={css.flag} src={`/${flag.name}.svg`} />
-            <div style={{ marginRight: 10 }}>
-              <span>{flag.colors.length} colors</span>
-              <br />
-              <br />
-              {flag.colors.length > 3 && (
-                <button onClick={() => onLimit(flag.name)}>
-                  limit&nbsp;to&nbsp;3
-                </button>
-              )}
-            </div>
-            <SortableContainer
-              axis={"xy"}
-              distance={1}
-              onSortEnd={(move) => onSortEnd(flag.name, move)}
-            >
-              {flag.colors.map((color, j) => (
-                <SortableItem
-                  key={`item-${j}`}
-                  index={j}
-                  color={color}
-                  onDelete={() => onDeleteColor(flag.name, j)}
+            <figure className={css.flag}>
+              <h3>{flag.name}</h3>
+              <img src={`/${flag.name}.svg`} />
+            </figure>
+            <div className={css.right}>
+              <div className={css.utils}>
+                <span style={{ marginRight: 10 }}>
+                  {flag.colors.length} colors
+                </span>
+                {flag.colors.length > 3 && (
+                  <button onClick={() => onLimit(flag.name)}>limit to 3</button>
+                )}
+                <button onClick={() => onResetFlag(flag.name)}>reset</button>
+                <input
+                  onKeyPress={(e) => onAddColor(e, flag.name)}
+                  placeholder="add color"
                 />
-              ))}
-            </SortableContainer>
+              </div>
+              <SortableContainer
+                axis={"xy"}
+                distance={1}
+                onSortEnd={(move) => onSortEnd(flag.name, move)}
+              >
+                {flag.colors.map((color, j) => (
+                  <SortableItem
+                    key={`item-${j}`}
+                    index={j}
+                    color={color}
+                    onDelete={() => onDeleteColor(flag.name, j)}
+                  />
+                ))}
+              </SortableContainer>
+              <div></div>
+            </div>
           </div>
         );
       })}
