@@ -1,0 +1,41 @@
+.root {
+}
+.row {
+  display: flex;
+  margin: 10px 0;
+}
+
+.flag {
+  width: 30%;
+  flex-basis: 30%;
+  margin-right: 10px;
+}
+.colors {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.color {
+  cursor: grab;
+  border-radius: 4px;
+  background-color: #efefef;
+  margin: 0 10px 10px 0;
+  white-space: nowrap;
+  padding-right: 15px;
+  display: flex;
+  align-items: center;
+}
+.color a {
+  text-decoration: none;
+  color: inherit;
+}
+body > .color {
+  cursor: grabbing;
+}
+.swatch {
+  /* border: 1px solid gray; */
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
