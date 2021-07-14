@@ -66,6 +66,7 @@ const getAllFlags = async () => {
     }
     output.push({
       name,
+      independent: country.independent,
       code: country.cca2,
       flag: `flag/${name}.svg`,
     });

@@ -1,8 +1,23 @@
 # Flags
 
-A small package with no dependencies containing up-to-date (as of 07-20201) flags and flag colors for all countries.
+A small package with no dependencies containing up-to-date svg flags and flag colors for all countries as defined by [ISO Standard 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1) that have a flag in Wikimedia Commons.
 
-To produce this list we took the list in [world-countries](https://www.npmjs.com/package/world-countries)), searched for the countries with a flag in Wikipedia, and used the SVG to manually pick the colors for each.
+To produce this list, we iterated through [world-countries](https://www.npmjs.com/package/world-countries) to find their respective flags in Wikimedia Commons, and used the SVG file to manually pick the colors for each ordered by visual relevance (a fuzzy criteria to make the color order representative of the flag).
+
+> **Warning:** not all entities in this project are independent countries; refer to the independent property to know if the country is considered a sovereign state.
+
+These countries are excluded as they don't have a flag available in Wikimedia Commons.
+
+```
+[
+  "Saint Helena, Ascension and Tristan da Cunha",
+  "Bouvet Island",
+  "Heard Island and McDonald Islands",
+  "Saint Martin",
+  "Svalbard and Jan Mayen",
+  "United States Minor Outlying Islands",
+]
+```
 
 ## Usage
 
