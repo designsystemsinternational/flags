@@ -27,7 +27,7 @@ export const Editor = () => {
 
   const [copy, setCopy] = useState();
   const onCopy = async () => {
-    const data = JSON.stringify(flags, null, 2);
+    const data = JSON.stringify(flags);
     await navigator.clipboard.writeText(data);
     setCopy(true);
     setTimeout(() => setCopy(false), 3000);
