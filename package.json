@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "description": "Country flags and their colors",
   "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "editor": "cd editor && npm run dev",
     "flags:get": "node scripts/flags.js",
