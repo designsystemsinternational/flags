@@ -6,17 +6,16 @@ To produce this list we took the list in [world-countries](https://www.npmjs.com
 
 ## Usage
 
-````
+```
 npm install @designsystemsinternational/flags
 ```
 
 ```js
-import flags from '@designsystemsinternational/flags';
+import flags from "@designsystemsinternational/flags";
 
-const chile = flags.find(f=>f.name == "Chile");
+const chile = flags.find((f) => f.name == "Chile");
 
 console.log(chile);
-
 
 /* output
 {
@@ -27,8 +26,7 @@ console.log(chile);
 }
 */
 
-// with webpack and the appropriate loader this would return the svg
-const flag = require(`@designsystemsinternational/flags/${chile.flag}`)
-
+// this would return the svg
+// with webpack and the appropriate loader or equivalent
+const flag = require(`@designsystemsinternational/flags/${chile.flag}`);
 ```
-````
