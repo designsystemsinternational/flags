@@ -28,6 +28,10 @@
   flex-shrink: 0;
   margin: 0 10px 0 0;
 }
+.left svg {
+  width: 100%;
+  height: auto;
+}
 
 .flag {
   width: 100%;
@@ -56,38 +60,4 @@ h3.name {
   display: flex;
   align-items: center;
   margin-right: 10px !important;
-}
-
-.colors {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-}
-.color {
-  cursor: grab;
-  border-radius: 4px;
-  overflow: hidden;
-  background-color: #efefef;
-  margin: 0 4px 4px 0;
-  white-space: nowrap;
-  padding-right: 15px;
-  display: flex;
-  align-items: center;
-}
-.color a {
-  text-decoration: none;
-  color: inherit;
-}
-body > .color {
-  cursor: grabbing;
-}
-.swatch {
-  display: inline-block;
-  width: 100px;
-  height: 50px;
-  margin-right: 10px;
-  border-top: 1px solid #f4f4f4;
-  border-bottom: 1px solid #f4f4f4;
-  border-left: 1px solid #f4f4f4;
-  border-radius: 4px 0 0 4px;
 }

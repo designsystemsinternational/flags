@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "editor": "cd editor && npm run dev",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "flags:get": "node scripts/flags.js",
+    "flags:optimize": "svgo -f ./bin/flag-raw -o ./flag",
+    "flags:copy": "rm -rf ./editor/data/flag/* && cp -r ./flag ./editor/data && cp ./bin/countries-with-flag.json ./editor/data",
+    "flags:update": "npm run flags:get && npm run flags:optimize && npm run flags:copy"
   },
   "keywords": [
     "flags",
@@ -13,8 +16,11 @@
   ],
   "author": "Design Systems International",
   "license": "MIT",
-  "dependencies": {
+  "devDependencies": {
+    "svgo": "^2.3.1",
     "axios": "^0.21.1",
+    "ora": "^5.4.1",
+    "world-countries": "^4.0.0",
     "xml2js": "^0.4.23"
   }
 }

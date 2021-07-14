@@ -1,0 +1,1527 @@
+[
+  {
+    "name": "Aruba",
+    "code": "AW",
+    "flag": "./flag/Aruba.svg",
+    "colors": ["#418fde", "#EF3340", "#ffd100", "#fff"]
+  },
+  {
+    "name": "Afghanistan",
+    "code": "AF",
+    "flag": "./flag/Afghanistan.svg",
+    "colors": ["#000", "#d32011", "#007a36", "#fff"]
+  },
+  {
+    "name": "Angola",
+    "code": "AO",
+    "flag": "./flag/Angola.svg",
+    "colors": ["#cc092f", "#000", "#ffcb00"]
+  },
+  {
+    "name": "Anguilla",
+    "code": "AI",
+    "flag": "./flag/Anguilla.svg",
+    "colors": ["#012169", "#9cf", "#f90", "#fff", "#c8102e"]
+  },
+  {
+    "name": "Åland Islands",
+    "code": "AX",
+    "flag": "./flag/Åland Islands.svg",
+    "colors": ["#0064AE", "#FFD300", "#DB0F16"]
+  },
+  {
+    "name": "Albania",
+    "code": "AL",
+    "flag": "./flag/Albania.svg",
+    "colors": ["#ff0000", "#000"]
+  },
+  {
+    "name": "Andorra",
+    "code": "AD",
+    "flag": "./flag/Andorra.svg",
+    "colors": ["#10069f", "#fedd00", "#d50032", "#c6aa76"]
+  },
+  {
+    "name": "United Arab Emirates",
+    "code": "AE",
+    "flag": "./flag/United Arab Emirates.svg",
+    "colors": ["#ff0000", "#00732f", "#fff", "#000"]
+  },
+  {
+    "name": "Argentina",
+    "code": "AR",
+    "flag": "./flag/Argentina.svg",
+    "colors": ["#74acdf", "#fff", "#f6b40e"]
+  },
+  {
+    "name": "Armenia",
+    "code": "AM",
+    "flag": "./flag/Armenia.svg",
+    "colors": ["#D90012", "#0033A0", "#F2A800"]
+  },
+  {
+    "name": "American Samoa",
+    "code": "AS",
+    "flag": "./flag/American Samoa.svg",
+    "colors": ["#006", "#FFF", "#BD1021", "#5A3719", "#FFC221"]
+  },
+  {
+    "name": "Antarctica",
+    "code": "AQ",
+    "flag": "./flag/Antarctica.svg",
+    "colors": ["#3a7dce", "#fff"]
+  },
+  {
+    "name": "French Southern and Antarctic Lands",
+    "code": "TF",
+    "flag": "./flag/French Southern and Antarctic Lands.svg",
+    "colors": ["#002395", "#fff", "#ED2939"]
+  },
+  {
+    "name": "Antigua and Barbuda",
+    "code": "AG",
+    "flag": "./flag/Antigua and Barbuda.svg",
+    "colors": ["#ce1126", "#000", "#0072c6", "#fff", "#fcd116"]
+  },
+  {
+    "name": "Australia",
+    "code": "AU",
+    "flag": "./flag/Australia.svg",
+    "colors": ["#00008b", "#ff0000", "#fff"]
+  },
+  {
+    "name": "Austria",
+    "code": "AT",
+    "flag": "./flag/Austria.svg",
+    "colors": ["#ed2939", "#fff"]
+  },
+  {
+    "name": "Azerbaijan",
+    "code": "AZ",
+    "flag": "./flag/Azerbaijan.svg",
+    "colors": ["#00b5e2", "#ef3340", "#509e2f", "#fff"]
+  },
+  {
+    "name": "Burundi",
+    "code": "BI",
+    "flag": "./flag/Burundi.svg",
+    "colors": ["#ce1126", "#1eb53a", "#fff"]
+  },
+  {
+    "name": "Belgium",
+    "code": "BE",
+    "flag": "./flag/Belgium.svg",
+    "colors": ["#000", "#fdda25", "#ef3340"]
+  },
+  {
+    "name": "Benin",
+    "code": "BJ",
+    "flag": "./flag/Benin.svg",
+    "colors": ["#008751", "#fcd116", "#e8112d"]
+  },
+  {
+    "name": "Burkina Faso",
+    "code": "BF",
+    "flag": "./flag/Burkina Faso.svg",
+    "colors": ["#ef2b2d", "#009e49", "#fcd116"]
+  },
+  {
+    "name": "Bangladesh",
+    "code": "BD",
+    "flag": "./flag/Bangladesh.svg",
+    "colors": ["#006a4e", "#f42a41"]
+  },
+  {
+    "name": "Bulgaria",
+    "code": "BG",
+    "flag": "./flag/Bulgaria.svg",
+    "colors": ["#fff", "#00966E", "#D62612"]
+  },
+  {
+    "name": "Bahrain",
+    "code": "BH",
+    "flag": "./flag/Bahrain.svg",
+    "colors": ["#fff", "#ce1126"]
+  },
+  {
+    "name": "Bahamas",
+    "code": "BS",
+    "flag": "./flag/Bahamas.svg",
+    "colors": ["#00778B", "#FFC72C", "#000"]
+  },
+  {
+    "name": "Bosnia and Herzegovina",
+    "code": "BA",
+    "flag": "./flag/Bosnia and Herzegovina.svg",
+    "colors": ["#002395", "#fecb00", "#fff"]
+  },
+  {
+    "name": "Saint Barthélemy",
+    "code": "BL",
+    "flag": "./flag/Saint Barthélemy.svg",
+    "colors": ["#1353B4", "#CE0F25", "#EACE24", "#F6E4BE", "#FFF"]
+  },
+  {
+    "name": "Belarus",
+    "code": "BY",
+    "flag": "./flag/Belarus.svg",
+    "colors": ["#ce1720", "#007c30", "#fff"]
+  },
+  {
+    "name": "Belize",
+    "code": "BZ",
+    "flag": "./flag/Belize.svg",
+    "colors": [
+      "#171696",
+      "#d90f19",
+      "#338a00",
+      "#fff",
+      "#9dc9e2",
+      "#ffe682",
+      "#653024",
+      "#ad7c59"
+    ]
+  },
+  {
+    "name": "Bermuda",
+    "code": "BM",
+    "flag": "./flag/Bermuda.svg",
+    "colors": ["#c8102e", "#2f8f22", "#64b4d1", "#012169", "#fff"]
+  },
+  {
+    "name": "Bolivia",
+    "code": "BO",
+    "flag": "./flag/Bolivia.svg",
+    "colors": ["#D52B1E", "#F9E300", "#007934"]
+  },
+  {
+    "name": "Caribbean Netherlands",
+    "code": "BQ",
+    "flag": "./flag/Caribbean Netherlands.svg",
+    "colors": ["#AE1C28", "#FFF", "#21468B"]
+  },
+  {
+    "name": "Brazil",
+    "code": "BR",
+    "flag": "./flag/Brazil.svg",
+    "colors": ["#009b3a", "#fedf00", "#002776", "#fff"]
+  },
+  {
+    "name": "Barbados",
+    "code": "BB",
+    "flag": "./flag/Barbados.svg",
+    "colors": ["#00267f", "#ffc726", "#000"]
+  },
+  {
+    "name": "Brunei",
+    "code": "BN",
+    "flag": "./flag/Brunei.svg",
+    "colors": ["#f7e017", "#cf1126", "#000", "#fff"]
+  },
+  {
+    "name": "Bhutan",
+    "code": "BT",
+    "flag": "./flag/Bhutan.svg",
+    "colors": ["#ffd520", "#ff4e12", "#fff"]
+  },
+  {
+    "name": "Botswana",
+    "code": "BW",
+    "flag": "./flag/Botswana.svg",
+    "colors": ["#6DA9D2", "#fff", "#000"]
+  },
+  {
+    "name": "Central African Republic",
+    "code": "CF",
+    "flag": "./flag/Central African Republic.svg",
+    "colors": ["#003082", "#289728", "#ffce00", "#fff", "#d21034"]
+  },
+  {
+    "name": "Canada",
+    "code": "CA",
+    "flag": "./flag/Canada.svg",
+    "colors": ["#ff0000", "#fff"]
+  },
+  {
+    "name": "Cocos (Keeling) Islands",
+    "code": "CC",
+    "flag": "./flag/Cocos (Keeling) Islands.svg",
+    "colors": ["#008000", "#ffe000", "#802000"]
+  },
+  {
+    "name": "Switzerland",
+    "code": "CH",
+    "flag": "./flag/Switzerland.svg",
+    "colors": ["#ff0000", "#fff"]
+  },
+  {
+    "name": "Chile",
+    "code": "CL",
+    "flag": "./flag/Chile.svg",
+    "colors": ["#fff", "#d72b1f", "#0039a6"]
+  },
+  {
+    "name": "China",
+    "code": "CN",
+    "flag": "./flag/China.svg",
+    "colors": ["#EE1C25", "#ff0"]
+  },
+  {
+    "name": "Ivory Coast",
+    "code": "CI",
+    "flag": "./flag/Ivory Coast.svg",
+    "colors": ["#f77f00", "#fff", "#009e60"]
+  },
+  {
+    "name": "Cameroon",
+    "code": "CM",
+    "flag": "./flag/Cameroon.svg",
+    "colors": ["#007a5e", "#ce1126", "#fcd116"]
+  },
+  {
+    "name": "DR Congo",
+    "code": "CD",
+    "flag": "./flag/DR Congo.svg",
+    "colors": ["#007fff", "#ce1021", "#f7d618"]
+  },
+  {
+    "name": "Republic of the Congo",
+    "code": "CG",
+    "flag": "./flag/Republic of the Congo.svg",
+    "colors": ["#009543", "#fbde4a", "#dc241f"]
+  },
+  {
+    "name": "Cook Islands",
+    "code": "CK",
+    "flag": "./flag/Cook Islands.svg",
+    "colors": ["#012169", "#fff", "#c8102e"]
+  },
+  {
+    "name": "Colombia",
+    "code": "CO",
+    "flag": "./flag/Colombia.svg",
+    "colors": ["#fcd116", "#003893", "#ce1126"]
+  },
+  {
+    "name": "Comoros",
+    "code": "KM",
+    "flag": "./flag/Comoros.svg",
+    "colors": ["#FFC61E", "#3D8E33", "#3A75C4", "#CE1126", "#FFF"]
+  },
+  {
+    "name": "Cape Verde",
+    "code": "CV",
+    "flag": "./flag/Cape Verde.svg",
+    "colors": ["#003893", "#cf2027", "#fff", "#f7d116"]
+  },
+  {
+    "name": "Costa Rica",
+    "code": "CR",
+    "flag": "./flag/Costa Rica.svg",
+    "colors": ["#002b7f", "#ce1126", "#fff"]
+  },
+  {
+    "name": "Cuba",
+    "code": "CU",
+    "flag": "./flag/Cuba.svg",
+    "colors": ["#002a8f", "#cf142b", "#fff"]
+  },
+  {
+    "name": "Curaçao",
+    "code": "CW",
+    "flag": "./flag/Curaçao.svg",
+    "colors": ["#002b7f", "#f9e814", "#fff"]
+  },
+  {
+    "name": "Christmas Island",
+    "code": "CX",
+    "flag": "./flag/Christmas Island.svg",
+    "colors": ["#0021ad", "#1c8a42", "#ffc639", "#fff"]
+  },
+  {
+    "name": "Cayman Islands",
+    "code": "KY",
+    "flag": "./flag/Cayman Islands.svg",
+    "colors": ["#012169", "#c8102e", "#00493d", "#0b50a0", "#fff", "#fcea83"]
+  },
+  {
+    "name": "Cyprus",
+    "code": "CY",
+    "flag": "./flag/Cyprus.svg",
+    "colors": ["#fff", "#d57800", "#4e5b31"]
+  },
+  {
+    "name": "Czechia",
+    "code": "CZ",
+    "flag": "./flag/Czechia.svg",
+    "colors": ["#fff", "#11457e", "#d7141a"]
+  },
+  {
+    "name": "Germany",
+    "code": "DE",
+    "flag": "./flag/Germany.svg",
+    "colors": ["#000", "#D00", "#FFCE00"]
+  },
+  {
+    "name": "Djibouti",
+    "code": "DJ",
+    "flag": "./flag/Djibouti.svg",
+    "colors": ["#6ab2e7", "#12ad2b", "#fff", "#d7141a"]
+  },
+  {
+    "name": "Dominica",
+    "code": "DM",
+    "flag": "./flag/Dominica.svg",
+    "colors": ["#006b3f", "#d41c30", "#fcd116", "#000", "#fff", "#9461c9"]
+  },
+  {
+    "name": "Denmark",
+    "code": "DK",
+    "flag": "./flag/Denmark.svg",
+    "colors": ["#c60c30", "#fff"]
+  },
+  {
+    "name": "Dominican Republic",
+    "code": "DO",
+    "flag": "./flag/Dominican Republic.svg",
+    "colors": ["#002d62", "#ce1126", "#fff", "#008f4c"]
+  },
+  {
+    "name": "Algeria",
+    "code": "DZ",
+    "flag": "./flag/Algeria.svg",
+    "colors": ["#063", "#d21034", "#fff"]
+  },
+  {
+    "name": "Ecuador",
+    "code": "EC",
+    "flag": "./flag/Ecuador.svg",
+    "colors": ["#fd0", "#034ea2", "#ed1c24", "#6dbe45", "#452c25"]
+  },
+  {
+    "name": "Egypt",
+    "code": "EG",
+    "flag": "./flag/Egypt.svg",
+    "colors": ["#ce1126", "#fff", "#c09300", "#000"]
+  },
+  {
+    "name": "Eritrea",
+    "code": "ER",
+    "flag": "./flag/Eritrea.svg",
+    "colors": ["#12ad2b", "#ea0437", "#4189dd", "#ffc726"]
+  },
+  {
+    "name": "Western Sahara",
+    "code": "EH",
+    "flag": "./flag/Western Sahara.svg",
+    "colors": ["#000", "#c4111b", "#007a3d", "#fff"]
+  },
+  {
+    "name": "Spain",
+    "code": "ES",
+    "flag": "./flag/Spain.svg",
+    "colors": ["#c60b1e", "#ffc400", "#ccc", "#c8b100"]
+  },
+  {
+    "name": "Estonia",
+    "code": "EE",
+    "flag": "./flag/Estonia.svg",
+    "colors": ["#0072ce", "#000", "#FFF"]
+  },
+  {
+    "name": "Ethiopia",
+    "code": "ET",
+    "flag": "./flag/Ethiopia.svg",
+    "colors": ["#0f47af", "#078930", "#fcdd09", "#da121a"]
+  },
+  {
+    "name": "Finland",
+    "code": "FI",
+    "flag": "./flag/Finland.svg",
+    "colors": ["#fff", "#003580"]
+  },
+  {
+    "name": "Fiji",
+    "code": "FJ",
+    "flag": "./flag/Fiji.svg",
+    "colors": ["#69b3e7", "#c8102e", "#fedd00", "#00ad50", "#012169"]
+  },
+  {
+    "name": "Falkland Islands",
+    "code": "FK",
+    "flag": "./flag/Falkland Islands.svg",
+    "colors": ["#012169", "#2a7fff", "#e5e5e5", "#fec413", "#c8102e", "#fff"]
+  },
+  {
+    "name": "France",
+    "code": "FR",
+    "flag": "./flag/France.svg",
+    "colors": ["#002395", "#fff", "#ED2939"]
+  },
+  {
+    "name": "Faroe Islands",
+    "code": "FO",
+    "flag": "./flag/Faroe Islands.svg",
+    "colors": ["#FFF", "#0065BD", "#ED2939"]
+  },
+  {
+    "name": "Micronesia",
+    "code": "FM",
+    "flag": "./flag/Micronesia.svg",
+    "colors": ["#75b2dd", "#fff"]
+  },
+  {
+    "name": "Gabon",
+    "code": "GA",
+    "flag": "./flag/Gabon.svg",
+    "colors": ["#009e60", "#fcd116", "#3a75c4"]
+  },
+  {
+    "name": "United Kingdom",
+    "code": "GB",
+    "flag": "./flag/United Kingdom.svg",
+    "colors": ["#C8102E", "#fff", "#012169"]
+  },
+  {
+    "name": "Georgia",
+    "code": "GE",
+    "flag": "./flag/Georgia.svg",
+    "colors": ["#fff", "#ff0000"]
+  },
+  {
+    "name": "Guernsey",
+    "code": "GG",
+    "flag": "./flag/Guernsey.svg",
+    "colors": ["#f9dd16", "#e8112d", "#fff"]
+  },
+  {
+    "name": "Ghana",
+    "code": "GH",
+    "flag": "./flag/Ghana.svg",
+    "colors": ["#ce1126", "#fcd116", "#006b3f", "#000"]
+  },
+  {
+    "name": "Gibraltar",
+    "code": "GI",
+    "flag": "./flag/Gibraltar.svg",
+    "colors": ["#fff", "#da000c", "#000", "#f8d80e"]
+  },
+  {
+    "name": "Guinea",
+    "code": "GN",
+    "flag": "./flag/Guinea.svg",
+    "colors": ["#ce1126", "#fcd116", "#009460"]
+  },
+  {
+    "name": "Guadeloupe",
+    "code": "GP",
+    "flag": "./flag/Guadeloupe.svg",
+    "colors": ["#002395", "#fff", "#ED2939"]
+  },
+  {
+    "name": "Gambia",
+    "code": "GM",
+    "flag": "./flag/Gambia.svg",
+    "colors": ["#ce1126", "#0c1c8c", "#3a7728", "#fff"]
+  },
+  {
+    "name": "Guinea-Bissau",
+    "code": "GW",
+    "flag": "./flag/Guinea-Bissau.svg",
+    "colors": ["#ce1126", "#fcd116", "#009e49", "#000"]
+  },
+  {
+    "name": "Equatorial Guinea",
+    "code": "GQ",
+    "flag": "./flag/Equatorial Guinea.svg",
+    "colors": ["#0073ce", "#3e9a00", "#e32118", "#fff", "#ffd700", "#a36629"]
+  },
+  {
+    "name": "Greece",
+    "code": "GR",
+    "flag": "./flag/Greece.svg",
+    "colors": ["#0D5EAF", "#fff"]
+  },
+  {
+    "name": "Grenada",
+    "code": "GD",
+    "flag": "./flag/Grenada.svg",
+    "colors": ["#ce1126", "#fcd116", "#007a5e"]
+  },
+  {
+    "name": "Greenland",
+    "code": "GL",
+    "flag": "./flag/Greenland.svg",
+    "colors": ["#d00c33", "#fff"]
+  },
+  {
+    "name": "Guatemala",
+    "code": "GT",
+    "flag": "./flag/Guatemala.svg",
+    "colors": ["#4997d0", "#fff", "#448127", "#f9f0aa"]
+  },
+  {
+    "name": "French Guiana",
+    "code": "GF",
+    "flag": "./flag/French Guiana.svg",
+    "colors": ["#078930", "#fcdd09", "#da121a"]
+  },
+  {
+    "name": "Guam",
+    "code": "GU",
+    "flag": "./flag/Guam.svg",
+    "colors": [
+      "#00297b",
+      "#c62139",
+      "#92dbfc",
+      "#ffde52",
+      "#008ce7",
+      "#109421",
+      "#8c4200"
+    ]
+  },
+  {
+    "name": "Guyana",
+    "code": "GY",
+    "flag": "./flag/Guyana.svg",
+    "colors": ["#ce1126", "#fcd116", "#009e49", "#fff"]
+  },
+  {
+    "name": "Hong Kong",
+    "code": "HK",
+    "flag": "./flag/Hong Kong.svg",
+    "colors": ["#de2910", "#fff"]
+  },
+  {
+    "name": "Honduras",
+    "code": "HN",
+    "flag": "./flag/Honduras.svg",
+    "colors": ["#0d3b99", "#fff"]
+  },
+  {
+    "name": "Croatia",
+    "code": "HR",
+    "flag": "./flag/Croatia.svg",
+    "colors": ["#ff0000", "#171796", "#fff", "#0093dd", "#f7db17"]
+  },
+  {
+    "name": "Haiti",
+    "code": "HT",
+    "flag": "./flag/Haiti.svg",
+    "colors": ["#00209f", "#d21034", "#016a16", "#f1b517", "#fff"]
+  },
+  {
+    "name": "Hungary",
+    "code": "HU",
+    "flag": "./flag/Hungary.svg",
+    "colors": ["#ce2939", "#FFF", "#477050"]
+  },
+  {
+    "name": "Indonesia",
+    "code": "ID",
+    "flag": "./flag/Indonesia.svg",
+    "colors": ["#ff0000", "#fff"]
+  },
+  {
+    "name": "Isle of Man",
+    "code": "IM",
+    "flag": "./flag/Isle of Man.svg",
+    "colors": ["#cf142b", "#fff", "#f9dd16"]
+  },
+  {
+    "name": "India",
+    "code": "IN",
+    "flag": "./flag/India.svg",
+    "colors": ["#f93", "#008", "#128807", "#fff"]
+  },
+  {
+    "name": "British Indian Ocean Territory",
+    "code": "IO",
+    "flag": "./flag/British Indian Ocean Territory.svg",
+    "colors": ["#012169", "#fff", "#006d00", "#c8102e", "#fed100"]
+  },
+  {
+    "name": "Ireland",
+    "code": "IE",
+    "flag": "./flag/Ireland.svg",
+    "colors": ["#169b62", "#fff", "#ff883e"]
+  },
+  {
+    "name": "Iran",
+    "code": "IR",
+    "flag": "./flag/Iran.svg",
+    "colors": ["#239f40", "#fff", "#da0000"]
+  },
+  {
+    "name": "Iraq",
+    "code": "IQ",
+    "flag": "./flag/Iraq.svg",
+    "colors": ["#ce1126", "#fff", "#000", "#007a3d"]
+  },
+  {
+    "name": "Iceland",
+    "code": "IS",
+    "flag": "./flag/Iceland.svg",
+    "colors": ["#02529C", "#DC1E35", "#FFF"]
+  },
+  {
+    "name": "Israel",
+    "code": "IL",
+    "flag": "./flag/Israel.svg",
+    "colors": ["#0038b8", "#fff"]
+  },
+  {
+    "name": "Italy",
+    "code": "IT",
+    "flag": "./flag/Italy.svg",
+    "colors": ["#009246", "#fff", "#ce2b37"]
+  },
+  {
+    "name": "Jamaica",
+    "code": "JM",
+    "flag": "./flag/Jamaica.svg",
+    "colors": ["#009b3a", "#000", "#fed100"]
+  },
+  {
+    "name": "Jersey",
+    "code": "JE",
+    "flag": "./flag/Jersey.svg",
+    "colors": ["#fff", "#cf142b", "#ffd700"]
+  },
+  {
+    "name": "Jordan",
+    "code": "JO",
+    "flag": "./flag/Jordan.svg",
+    "colors": ["#000", "#ce1126", "#007a3d", "#fff"]
+  },
+  {
+    "name": "Japan",
+    "code": "JP",
+    "flag": "./flag/Japan.svg",
+    "colors": ["#fff", "#bc002d"]
+  },
+  {
+    "name": "Kazakhstan",
+    "code": "KZ",
+    "flag": "./flag/Kazakhstan.svg",
+    "colors": ["#00afca", "#fec50c"]
+  },
+  {
+    "name": "Kenya",
+    "code": "KE",
+    "flag": "./flag/Kenya.svg",
+    "colors": ["#000", "#b00", "#060", "#fff"]
+  },
+  {
+    "name": "Kyrgyzstan",
+    "code": "KG",
+    "flag": "./flag/Kyrgyzstan.svg",
+    "colors": ["#ff0000", "#ff0"]
+  },
+  {
+    "name": "Cambodia",
+    "code": "KH",
+    "flag": "./flag/Cambodia.svg",
+    "colors": ["#032ea1", "#e00025", "#fff"]
+  },
+  {
+    "name": "Kiribati",
+    "code": "KI",
+    "flag": "./flag/Kiribati.svg",
+    "colors": ["#c81010", "#fff", "#183070", "#f8d000"]
+  },
+  {
+    "name": "Saint Kitts and Nevis",
+    "code": "KN",
+    "flag": "./flag/Saint Kitts and Nevis.svg",
+    "colors": ["#009e49", "#000", "#ce1126", "#fcd116", "#fff"]
+  },
+  {
+    "name": "South Korea",
+    "code": "KR",
+    "flag": "./flag/South Korea.svg",
+    "colors": ["#fff", "#cd2e3a", "#0047a0", "#000"]
+  },
+  {
+    "name": "Kosovo",
+    "code": "XK",
+    "flag": "./flag/Kosovo.svg",
+    "colors": ["#244aa5", "#d0a650", "#fff"]
+  },
+  {
+    "name": "Kuwait",
+    "code": "KW",
+    "flag": "./flag/Kuwait.svg",
+    "colors": ["#000", "#007a3d", "#ce1126", "#fff"]
+  },
+  {
+    "name": "Laos",
+    "code": "LA",
+    "flag": "./flag/Laos.svg",
+    "colors": ["#ce1126", "#002868", "#fff"]
+  },
+  {
+    "name": "Lebanon",
+    "code": "LB",
+    "flag": "./flag/Lebanon.svg",
+    "colors": ["#ed1c24", "#fff", "#00a651"]
+  },
+  {
+    "name": "Liberia",
+    "code": "LR",
+    "flag": "./flag/Liberia.svg",
+    "colors": ["#bf0a30", "#fff", "#002868"]
+  },
+  {
+    "name": "Libya",
+    "code": "LY",
+    "flag": "./flag/Libya.svg",
+    "colors": ["#e70013", "#000", "#239e46", "#fff"]
+  },
+  {
+    "name": "Saint Lucia",
+    "code": "LC",
+    "flag": "./flag/Saint Lucia.svg",
+    "colors": ["#6Cf", "#FCD116", "#000", "#FFF"]
+  },
+  {
+    "name": "Liechtenstein",
+    "code": "LI",
+    "flag": "./flag/Liechtenstein.svg",
+    "colors": ["#002b7f", "#ce1126", "#ffd83d", "#000"]
+  },
+  {
+    "name": "Sri Lanka",
+    "code": "LK",
+    "flag": "./flag/Sri Lanka.svg",
+    "colors": ["#ffbe29", "#8d153a", "#00534e", "#eb7400"]
+  },
+  {
+    "name": "Lesotho",
+    "code": "LS",
+    "flag": "./flag/Lesotho.svg",
+    "colors": ["#00209f", "#fff", "#009543", "#000"]
+  },
+  {
+    "name": "Lithuania",
+    "code": "LT",
+    "flag": "./flag/Lithuania.svg",
+    "colors": ["#fdb913", "#006a44", "#c1272d"]
+  },
+  {
+    "name": "Luxembourg",
+    "code": "LU",
+    "flag": "./flag/Luxembourg.svg",
+    "colors": ["#ed2939", "#fff", "#00A1DE"]
+  },
+  {
+    "name": "Latvia",
+    "code": "LV",
+    "flag": "./flag/Latvia.svg",
+    "colors": ["#9E3039", "#FFF"]
+  },
+  {
+    "name": "Macau",
+    "code": "MO",
+    "flag": "./flag/Macau.svg",
+    "colors": ["#0f7562", "#fff", "#ffde23"]
+  },
+  {
+    "name": "Morocco",
+    "code": "MA",
+    "flag": "./flag/Morocco.svg",
+    "colors": ["#c1272d", "#006233"]
+  },
+  {
+    "name": "Monaco",
+    "code": "MC",
+    "flag": "./flag/Monaco.svg",
+    "colors": ["#CE1126", "#FFF"]
+  },
+  {
+    "name": "Moldova",
+    "code": "MD",
+    "flag": "./flag/Moldova.svg",
+    "colors": ["#0046ae", "#ffd200", "#cc092f", "#b07f55"]
+  },
+  {
+    "name": "Madagascar",
+    "code": "MG",
+    "flag": "./flag/Madagascar.svg",
+    "colors": ["#FFF", "#FC3D32", "#007E3A"]
+  },
+  {
+    "name": "Maldives",
+    "code": "MV",
+    "flag": "./flag/Maldives.svg",
+    "colors": ["#D21034", "#007E3A", "#FFF"]
+  },
+  {
+    "name": "Mexico",
+    "code": "MX",
+    "flag": "./flag/Mexico.svg",
+    "colors": ["#006847", "#fff", "#ce1126"]
+  },
+  {
+    "name": "Marshall Islands",
+    "code": "MH",
+    "flag": "./flag/Marshall Islands.svg",
+    "colors": ["#003893", "#fff", "#dd7500"]
+  },
+  {
+    "name": "North Macedonia",
+    "code": "MK",
+    "flag": "./flag/North Macedonia.svg",
+    "colors": ["#d82126", "#f8e92e"]
+  },
+  {
+    "name": "Mali",
+    "code": "ML",
+    "flag": "./flag/Mali.svg",
+    "colors": ["#14b53a", "#fcd116", "#ce1126"]
+  },
+  {
+    "name": "Malta",
+    "code": "MT",
+    "flag": "./flag/Malta.svg",
+    "colors": ["#cf142b", "#fff", "#ccc"]
+  },
+  {
+    "name": "Myanmar",
+    "code": "MM",
+    "flag": "./flag/Myanmar.svg",
+    "colors": ["#FECB00", "#34B233", "#EA2839", "#FFF"]
+  },
+  {
+    "name": "Montenegro",
+    "code": "ME",
+    "flag": "./flag/Montenegro.svg",
+    "colors": ["#c40308", "#d3ae3b", "#1d5e91", "#6d8c3e"]
+  },
+  {
+    "name": "Mongolia",
+    "code": "MN",
+    "flag": "./flag/Mongolia.svg",
+    "colors": ["#da2032", "#ffd900", "#0066b3"]
+  },
+  {
+    "name": "Northern Mariana Islands",
+    "code": "MP",
+    "flag": "./flag/Northern Mariana Islands.svg",
+    "colors": [
+      "#0033a1",
+      "#fff",
+      "#e1261c",
+      "#b1b4b3",
+      "#c16b13",
+      "#62a70f",
+      "#007935"
+    ]
+  },
+  {
+    "name": "Mozambique",
+    "code": "MZ",
+    "flag": "./flag/Mozambique.svg",
+    "colors": ["#d21034", "#007168", "#fce100", "#000", "#fff"]
+  },
+  {
+    "name": "Mauritania",
+    "code": "MR",
+    "flag": "./flag/Mauritania.svg",
+    "colors": ["#d01c1f", "#00a95c", "#ffd700"]
+  },
+  {
+    "name": "Montserrat",
+    "code": "MS",
+    "flag": "./flag/Montserrat.svg",
+    "colors": ["#012169", "#00a2bd", "#a53d08", "#c8102e", "#fff", "#008021"]
+  },
+  {
+    "name": "Martinique",
+    "code": "MQ",
+    "flag": "./flag/Martinique.svg",
+    "colors": ["#002395", "#fff", "#ED2939"]
+  },
+  {
+    "name": "Mauritius",
+    "code": "MU",
+    "flag": "./flag/Mauritius.svg",
+    "colors": ["#ea2839", "#1a206d", "#ffd500", "#00a551"]
+  },
+  {
+    "name": "Malawi",
+    "code": "MW",
+    "flag": "./flag/Malawi.svg",
+    "colors": ["#000", "#ce1126", "#339e35"]
+  },
+  {
+    "name": "Malaysia",
+    "code": "MY",
+    "flag": "./flag/Malaysia.svg",
+    "colors": ["#006", "#fc0", "#c00", "#fff"]
+  },
+  {
+    "name": "Mayotte",
+    "code": "YT",
+    "flag": "./flag/Mayotte.svg",
+    "colors": ["#d42e12", "#171796", "#000", "#fff"]
+  },
+  {
+    "name": "Namibia",
+    "code": "NA",
+    "flag": "./flag/Namibia.svg",
+    "colors": ["#003580", "#d21034", "#009543", "#ffce00"]
+  },
+  {
+    "name": "New Caledonia",
+    "code": "NC",
+    "flag": "./flag/New Caledonia.svg",
+    "colors": ["#fae600", "#0035ad", "#ed4135", "#009543"]
+  },
+  {
+    "name": "Niger",
+    "code": "NE",
+    "flag": "./flag/Niger.svg",
+    "colors": ["#e05206", "#FFF", "#0DB02B"]
+  },
+  {
+    "name": "Norfolk Island",
+    "code": "NF",
+    "flag": "./flag/Norfolk Island.svg",
+    "colors": ["#007934", "#fff"]
+  },
+  {
+    "name": "Nigeria",
+    "code": "NG",
+    "flag": "./flag/Nigeria.svg",
+    "colors": ["#008751", "#fff"]
+  },
+  {
+    "name": "Nicaragua",
+    "code": "NI",
+    "flag": "./flag/Nicaragua.svg",
+    "colors": ["#0067C6", "#fff", "#97c924", "#17c0eb"]
+  },
+  {
+    "name": "Niue",
+    "code": "NU",
+    "flag": "./flag/Niue.svg",
+    "colors": ["#fedd00", "#c8102e", "#012169", "#fff"]
+  },
+  {
+    "name": "Netherlands",
+    "code": "NL",
+    "flag": "./flag/Netherlands.svg",
+    "colors": ["#AE1C28", "#FFF", "#21468B"]
+  },
+  {
+    "name": "Norway",
+    "code": "NO",
+    "flag": "./flag/Norway.svg",
+    "colors": ["#ba0c2f", "#fff", "#00205b"]
+  },
+  {
+    "name": "Nepal",
+    "code": "NP",
+    "flag": "./flag/Nepal.svg",
+    "colors": ["#DC143C", "#003893", "#fff"]
+  },
+  {
+    "name": "Nauru",
+    "code": "NR",
+    "flag": "./flag/Nauru.svg",
+    "colors": ["#002b7f", "#ffc61e", "#fff"]
+  },
+  {
+    "name": "New Zealand",
+    "code": "NZ",
+    "flag": "./flag/New Zealand.svg",
+    "colors": ["#012169", "#C8102E", "#FFF"]
+  },
+  {
+    "name": "Oman",
+    "code": "OM",
+    "flag": "./flag/Oman.svg",
+    "colors": ["#db161b", "#008000", "#fff"]
+  },
+  {
+    "name": "Pakistan",
+    "code": "PK",
+    "flag": "./flag/Pakistan.svg",
+    "colors": ["#01411C", "#fff"]
+  },
+  {
+    "name": "Panama",
+    "code": "PA",
+    "flag": "./flag/Panama.svg",
+    "colors": ["#072357", "#da121a", "#fff"]
+  },
+  {
+    "name": "Pitcairn Islands",
+    "code": "PN",
+    "flag": "./flag/Pitcairn Islands.svg",
+    "colors": [
+      "#012169",
+      "#337321",
+      "#006EC7",
+      "#F7E017",
+      "#96877D",
+      "#c8102e",
+      "#fff"
+    ]
+  },
+  {
+    "name": "Peru",
+    "code": "PE",
+    "flag": "./flag/Peru.svg",
+    "colors": ["#D91023", "#fff"]
+  },
+  {
+    "name": "Philippines",
+    "code": "PH",
+    "flag": "./flag/Philippines.svg",
+    "colors": ["#0038a8", "#ce1126", "#fcd116", "#fff"]
+  },
+  {
+    "name": "Palau",
+    "code": "PW",
+    "flag": "./flag/Palau.svg",
+    "colors": ["#09F", "#FF0"]
+  },
+  {
+    "name": "Papua New Guinea",
+    "code": "PG",
+    "flag": "./flag/Papua New Guinea.svg",
+    "colors": ["#ce1126", "#000", "#fcd116", "#fff"]
+  },
+  {
+    "name": "Poland",
+    "code": "PL",
+    "flag": "./flag/Poland.svg",
+    "colors": ["#dc143c", "#fff"]
+  },
+  {
+    "name": "Puerto Rico",
+    "code": "PR",
+    "flag": "./flag/Puerto Rico.svg",
+    "colors": ["#0050F0", "#E00", "#FFF"]
+  },
+  {
+    "name": "North Korea",
+    "code": "KP",
+    "flag": "./flag/North Korea.svg",
+    "colors": ["#ED1C27", "#024FA2", "#fff"]
+  },
+  {
+    "name": "Portugal",
+    "code": "PT",
+    "flag": "./flag/Portugal.svg",
+    "colors": ["#060", "#ff0000", "#ff0", "#039", "#fff"]
+  },
+  {
+    "name": "Paraguay",
+    "code": "PY",
+    "flag": "./flag/Paraguay.svg",
+    "colors": ["#d52b1e", "#fff", "#0038a8", "#fedf00", "#009b3a"]
+  },
+  {
+    "name": "Palestine",
+    "code": "PS",
+    "flag": "./flag/Palestine.svg",
+    "colors": ["#e4312b", "#000", "#268024", "#fff"]
+  },
+  {
+    "name": "French Polynesia",
+    "code": "PF",
+    "flag": "./flag/French Polynesia.svg",
+    "colors": ["#ce1126", "#ff9c10", "#fff", "#083d9c"]
+  },
+  {
+    "name": "Qatar",
+    "code": "QA",
+    "flag": "./flag/Qatar.svg",
+    "colors": ["#8a1538", "#fff"]
+  },
+  {
+    "name": "Réunion",
+    "code": "RE",
+    "flag": "./flag/Réunion.svg",
+    "colors": ["#002395", "#fff", "#ED2939"]
+  },
+  {
+    "name": "Romania",
+    "code": "RO",
+    "flag": "./flag/Romania.svg",
+    "colors": ["#002B7F", "#FCD116", "#CE1126"]
+  },
+  {
+    "name": "Russia",
+    "code": "RU",
+    "flag": "./flag/Russia.svg",
+    "colors": ["#fff", "#0039a6", "#d52b1e"]
+  },
+  {
+    "name": "Rwanda",
+    "code": "RW",
+    "flag": "./flag/Rwanda.svg",
+    "colors": ["#00A1DE", "#FAD201", "#20603D"]
+  },
+  {
+    "name": "Saudi Arabia",
+    "code": "SA",
+    "flag": "./flag/Saudi Arabia.svg",
+    "colors": ["#006c35", "#fff"]
+  },
+  {
+    "name": "Sudan",
+    "code": "SD",
+    "flag": "./flag/Sudan.svg",
+    "colors": ["#007229", "#d21034", "#fff", "#000"]
+  },
+  {
+    "name": "Senegal",
+    "code": "SN",
+    "flag": "./flag/Senegal.svg",
+    "colors": ["#00853f", "#fdef42", "#e31b23"]
+  },
+  {
+    "name": "Singapore",
+    "code": "SG",
+    "flag": "./flag/Singapore.svg",
+    "colors": ["#fff", "#ee2436"]
+  },
+  {
+    "name": "South Georgia",
+    "code": "GS",
+    "flag": "./flag/South Georgia.svg",
+    "colors": [
+      "#012169",
+      "#c8102e",
+      "#1e5aa6",
+      "#FFF",
+      "#fb0",
+      "#00F",
+      "#006b00",
+      "#656263",
+      "#8a9396",
+      "#000",
+      "#923f00"
+    ]
+  },
+  {
+    "name": "Solomon Islands",
+    "code": "SB",
+    "flag": "./flag/Solomon Islands.svg",
+    "colors": ["#0051ba", "#fcd116", "#215b33", "#fff"]
+  },
+  {
+    "name": "Sierra Leone",
+    "code": "SL",
+    "flag": "./flag/Sierra Leone.svg",
+    "colors": ["#1eb53a", "#fff", "#0072c6"]
+  },
+  {
+    "name": "El Salvador",
+    "code": "SV",
+    "flag": "./flag/El Salvador.svg",
+    "colors": ["#0047ab", "#fff", "#090", "#fc0"]
+  },
+  {
+    "name": "San Marino",
+    "code": "SM",
+    "flag": "./flag/San Marino.svg",
+    "colors": ["#5eb6e4", "#fff", "#f1bf31", "#658d5c"]
+  },
+  {
+    "name": "Somalia",
+    "code": "SO",
+    "flag": "./flag/Somalia.svg",
+    "colors": ["#4189DD", "#FFF"]
+  },
+  {
+    "name": "Saint Pierre and Miquelon",
+    "code": "PM",
+    "flag": "./flag/Saint Pierre and Miquelon.svg",
+    "colors": ["#002395", "#fff", "#ED2939"]
+  },
+  {
+    "name": "Serbia",
+    "code": "RS",
+    "flag": "./flag/Serbia.svg",
+    "colors": ["#c6363c", "#0c4076", "#edb92e", "#fff"]
+  },
+  {
+    "name": "South Sudan",
+    "code": "SS",
+    "flag": "./flag/South Sudan.svg",
+    "colors": ["#0f47af", "#000", "#da121a", "#078930", "#fcdd09"]
+  },
+  {
+    "name": "São Tomé and Príncipe",
+    "code": "ST",
+    "flag": "./flag/São Tomé and Príncipe.svg",
+    "colors": ["#d21034", "#12ad2b", "#ffce00", "#000"]
+  },
+  {
+    "name": "Suriname",
+    "code": "SR",
+    "flag": "./flag/Suriname.svg",
+    "colors": ["#377e3f", "#b40a2d", "#ecc81d", "#fff"]
+  },
+  {
+    "name": "Slovakia",
+    "code": "SK",
+    "flag": "./flag/Slovakia.svg",
+    "colors": ["#fff", "#0b4ea2", "#ee1c25"]
+  },
+  {
+    "name": "Slovenia",
+    "code": "SI",
+    "flag": "./flag/Slovenia.svg",
+    "colors": ["#fff", "#005ce5", "#ff0000", "#ffe500"]
+  },
+  {
+    "name": "Sweden",
+    "code": "SE",
+    "flag": "./flag/Sweden.svg",
+    "colors": ["#006aa7", "#fecc00"]
+  },
+  {
+    "name": "Eswatini",
+    "code": "SZ",
+    "flag": "./flag/Eswatini.svg",
+    "colors": ["#3e5eb9", "#b10c0c", "#ffd900", "#000", "#fff"]
+  },
+  {
+    "name": "Sint Maarten",
+    "code": "SX",
+    "flag": "./flag/Sint Maarten.svg",
+    "colors": [
+      "#fff",
+      "#dc171d",
+      "#012a87",
+      "#62afe1",
+      "#f9d90f",
+      "#bc715f",
+      "#008830"
+    ]
+  },
+  {
+    "name": "Seychelles",
+    "code": "SC",
+    "flag": "./flag/Seychelles.svg",
+    "colors": ["#003f87", "#fcd856", "#d62828", "#fff", "#007a3d"]
+  },
+  {
+    "name": "Syria",
+    "code": "SY",
+    "flag": "./flag/Syria.svg",
+    "colors": ["#007a3d", "#ce1126", "#fff", "#000"]
+  },
+  {
+    "name": "Turks and Caicos Islands",
+    "code": "TC",
+    "flag": "./flag/Turks and Caicos Islands.svg",
+    "colors": [
+      "#002868",
+      "#fcd116",
+      "#009e49",
+      "#ce1126",
+      "#fff",
+      "#ffa1a1",
+      "#9e540a"
+    ]
+  },
+  {
+    "name": "Chad",
+    "code": "TD",
+    "flag": "./flag/Chad.svg",
+    "colors": ["#002664", "#fecb00", "#c60c30"]
+  },
+  {
+    "name": "Togo",
+    "code": "TG",
+    "flag": "./flag/Togo.svg",
+    "colors": ["#d21034", "#006a4e", "#ffce00", "#fff"]
+  },
+  {
+    "name": "Thailand",
+    "code": "TH",
+    "flag": "./flag/Thailand.svg",
+    "colors": ["#A51931", "#2D2A4A", "#F4F5F8"]
+  },
+  {
+    "name": "Tajikistan",
+    "code": "TJ",
+    "flag": "./flag/Tajikistan.svg",
+    "colors": ["#c00", "#060", "#f8c300", "#fff"]
+  },
+  {
+    "name": "Tokelau",
+    "code": "TK",
+    "flag": "./flag/Tokelau.svg",
+    "colors": ["#012169", "#ffd100", "#fff"]
+  },
+  {
+    "name": "Turkmenistan",
+    "code": "TM",
+    "flag": "./flag/Turkmenistan.svg",
+    "colors": ["#00843d", "#d22630", "#ffc72c", "#fff"]
+  },
+  {
+    "name": "Timor-Leste",
+    "code": "TL",
+    "flag": "./flag/Timor-Leste.svg",
+    "colors": ["#000", "#ffc726", "#dc241f", "#fff"]
+  },
+  {
+    "name": "Tonga",
+    "code": "TO",
+    "flag": "./flag/Tonga.svg",
+    "colors": ["#C10000", "#fff"]
+  },
+  {
+    "name": "Trinidad and Tobago",
+    "code": "TT",
+    "flag": "./flag/Trinidad and Tobago.svg",
+    "colors": ["#da1a35", "#FFF", "#000"]
+  },
+  {
+    "name": "Tunisia",
+    "code": "TN",
+    "flag": "./flag/Tunisia.svg",
+    "colors": ["#e70013", "#fff"]
+  },
+  {
+    "name": "Turkey",
+    "code": "TR",
+    "flag": "./flag/Turkey.svg",
+    "colors": ["#E30A17", "#fff"]
+  },
+  {
+    "name": "Tuvalu",
+    "code": "TV",
+    "flag": "./flag/Tuvalu.svg",
+    "colors": ["#009cde", "#fedd00", "#c8102e", "#012169", "#fff"]
+  },
+  {
+    "name": "Taiwan",
+    "code": "TW",
+    "flag": "./flag/Taiwan.svg",
+    "colors": ["#000095", "#fe0000", "#fff"]
+  },
+  {
+    "name": "Tanzania",
+    "code": "TZ",
+    "flag": "./flag/Tanzania.svg",
+    "colors": ["#1eb53a", "#fcd116", "#000", "#00a3dd"]
+  },
+  {
+    "name": "Uganda",
+    "code": "UG",
+    "flag": "./flag/Uganda.svg",
+    "colors": ["#000", "#fcdc04", "#d90000", "#fff"]
+  },
+  {
+    "name": "Ukraine",
+    "code": "UA",
+    "flag": "./flag/Ukraine.svg",
+    "colors": ["#005BBB", "#FFD500"]
+  },
+  {
+    "name": "Uruguay",
+    "code": "UY",
+    "flag": "./flag/Uruguay.svg",
+    "colors": ["#0038a8", "#fff", "#fcd116", "#7b3f00"]
+  },
+  {
+    "name": "United States",
+    "code": "US",
+    "flag": "./flag/United States.svg",
+    "colors": ["#b22234", "#3c3b6e", "#fff"]
+  },
+  {
+    "name": "Uzbekistan",
+    "code": "UZ",
+    "flag": "./flag/Uzbekistan.svg",
+    "colors": ["#fff", "#1eb53a", "#0099b5", "#ce1126"]
+  },
+  {
+    "name": "Vatican City",
+    "code": "VA",
+    "flag": "./flag/Vatican City.svg",
+    "colors": ["#ffe000", "#fff", "#ccc", "#ff0000"]
+  },
+  {
+    "name": "Saint Vincent and the Grenadines",
+    "code": "VC",
+    "flag": "./flag/Saint Vincent and the Grenadines.svg",
+    "colors": ["#fcd022", "#007c2e", "#002674"]
+  },
+  {
+    "name": "Venezuela",
+    "code": "VE",
+    "flag": "./flag/Venezuela.svg",
+    "colors": ["#fc0", "#cf142b", "#00247d", "#fff"]
+  },
+  {
+    "name": "British Virgin Islands",
+    "code": "VG",
+    "flag": "./flag/British Virgin Islands.svg",
+    "colors": ["#012169", "#c8102e", "#006129"]
+  },
+  {
+    "name": "United States Virgin Islands",
+    "code": "VI",
+    "flag": "./flag/United States Virgin Islands.svg",
+    "colors": ["#FFF", "#F4C53D", "#0081C6", "#162667", "#A60032"]
+  },
+  {
+    "name": "Vietnam",
+    "code": "VN",
+    "flag": "./flag/Vietnam.svg",
+    "colors": ["#da251d", "#ff0"]
+  },
+  {
+    "name": "Vanuatu",
+    "code": "VU",
+    "flag": "./flag/Vanuatu.svg",
+    "colors": ["#d21034", "#009543", "#000", "#fdce12"]
+  },
+  {
+    "name": "Wallis and Futuna",
+    "code": "WF",
+    "flag": "./flag/Wallis and Futuna.svg",
+    "colors": ["#ED2939", "#FFF", "#002395"]
+  },
+  {
+    "name": "Samoa",
+    "code": "WS",
+    "flag": "./flag/Samoa.svg",
+    "colors": ["#ce1126", "#002b7f", "#fff"]
+  },
+  {
+    "name": "Yemen",
+    "code": "YE",
+    "flag": "./flag/Yemen.svg",
+    "colors": ["#fff", "#000", "#ce1126"]
+  },
+  {
+    "name": "South Africa",
+    "code": "ZA",
+    "flag": "./flag/South Africa.svg",
+    "colors": ["#E1392D", "#007847", "#000C8A", "#000", "#FFB915", "#FFF"]
+  },
+  {
+    "name": "Zambia",
+    "code": "ZM",
+    "flag": "./flag/Zambia.svg",
+    "colors": ["#198a00", "#de2010", "#000", "#ef7d00"]
+  },
+  {
+    "name": "Zimbabwe",
+    "code": "ZW",
+    "flag": "./flag/Zimbabwe.svg",
+    "colors": ["#006400", "#ffd200", "#d40000", "#000", "#fff"]
+  }
+]

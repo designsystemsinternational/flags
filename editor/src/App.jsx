@@ -1,33 +1,26 @@
 import React, { useState, useEffect } from "react";
 import produce from "immer";
-import { sortableContainer, sortableElement } from "react-sortable-hoc";
 import { moveInArray } from "./utils";
+import baseFlags from "./baseFlags";
 
-import _flags from "../../flags";
+import Flag from "./components/Flag";
+import { SortableColor, SortableColors } from "./components/Sortable";
 
 import css from "./App.module.css";
-
-export const Flag = ({ name }) => {
-  const path = `../../flag/${name}.svg?component`;
-  const [svgFlag, setFlag] = useState(null);
-  useEffect(() => {
-    (async () => {
-      const flag = await import(path);
-      setFlag(flag.default);
-    })();
-  }, []);
-  return svgFlag || null;
-};
 
 export const App = () => {
   const [flags, setFlags] = useState(() => {
     if (window.localStorage.getItem("flags")) {
-      return JSON.parse(window.localStorage.getItem("flags"));
+      const stored = JSON.parse(window.localStorage.getItem("flags"));
+      stored.forEach((item, i) => {
+        return { ...baseFlags[i], ...item };
+      });
+      return stored;
     }
-    return _flags;
+    return baseFlags;
   });
-  const [show, setShow] = useState(false);
 
+  const [show, setShow] = useState(false);
   useEffect(() => {
     window.localStorage.setItem("flags", JSON.stringify(flags));
   }, [flags]);
@@ -39,16 +32,21 @@ export const App = () => {
     setCopy(true);
     setTimeout(() => setCopy(false), 3000);
   };
-
+  const [confirmReset, setConfirmReset] = useState();
   const onReset = () => {
-    setFlags(_flags);
+    if (confirmReset) {
+      setFlags(baseFlags);
+    } else {
+      setConfirmReset(true);
+      setTimeout(() => setConfirmReset(false), 3000);
+    }
   };
 
   const onResetFlag = (name) => {
     setFlags(
       produce((draft) => {
         const flag = draft.find((f) => f.name == name);
-        flag.colors = _flags.find((f) => f.name == name).colors;
+        flag.colors = baseFlags.find((f) => f.name == name).colors;
       })
     );
   };
@@ -75,24 +73,23 @@ export const App = () => {
     );
   };
 
-  const onAddColor = (e, name) => {
-    if (e.key == "Enter") {
-      setFlags(
-        produce((draft) => {
-          const flag = draft.find((f) => f.name == name);
-          if (flag) {
-            flag.colors.push(e.target.value);
-          }
-        })
-      );
-    }
+  const onAddColor = (color, name) => {
+    setFlags(
+      produce((draft) => {
+        const flag = draft.find((f) => f.name == name);
+        if (flag && !flag.colors.includes(color)) {
+          flag.colors.push(color);
+        }
+      })
+    );
   };
-  const onLimit = (name) => {
+
+  const onClear = (name) => {
     setFlags(
       produce((draft) => {
         const flag = draft.find((f) => f.name == name);
         if (flag) {
-          flag.colors = flag.colors.slice(0, 3);
+          flag.colors = [];
         }
       })
     );
@@ -103,47 +100,57 @@ export const App = () => {
       <header className={css.header}>
         <h2>Country Flags</h2>
         <button onClick={() => setShow(!show)}>
-          {show ? "show code" : "hide code"}
+          {show ? "hide code" : "show code"}
         </button>
         <button onClick={onCopy}>
           {copy ? "copied JSON to clipboard!" : "copy JSON"}
         </button>
-        <button onClick={onReset}>reset all</button>
+        <button onClick={onReset}>
+          {confirmReset ? "reset all?" : "reset all"}
+        </button>
       </header>
       {show && <pre className={css.code}>{JSON.stringify(flags, null, 2)}</pre>}
       {flags.map((flag, i) => {
         return (
           <div key={i} className={css.row}>
             <div className={css.left}>
-              <h3 className={css.name}>{flag.name}</h3>
-              <img className={css.flag} src={`/${flag.name}.svg`} />
+              <h3 className={css.name}>
+                {i} / {flags.length} — {flag.name} ({flag.code})
+              </h3>
+              <Flag
+                name={flag.name}
+                className={css.flag}
+                onPick={(color) => onAddColor(color, flag.name)}
+              />
             </div>
             <div className={css.right}>
               <div className={css.utils}>
                 <h3 style={{ marginRight: 10 }}>{flag.colors.length} colors</h3>
-                {flag.colors.length > 3 && (
-                  <button onClick={() => onLimit(flag.name)}>limit to 3</button>
-                )}
+
+                <button onClick={() => onClear(flag.name)}>clear</button>
+
                 <button onClick={() => onResetFlag(flag.name)}>reset</button>
                 <input
-                  onKeyPress={(e) => onAddColor(e, flag.name)}
+                  onKeyPress={(e) =>
+                    e.key == "Enter" && onAddColor(e.target.value, flag.name)
+                  }
                   placeholder="add color"
                 />
               </div>
-              <SortableContainer
+              <SortableColors
                 axis={"xy"}
                 distance={1}
                 onSortEnd={(move) => onSortEnd(flag.name, move)}
               >
                 {flag.colors.map((color, j) => (
-                  <SortableItem
+                  <SortableColor
                     key={`item-${j}`}
                     index={j}
                     color={color}
                     onDelete={() => onDeleteColor(flag.name, j)}
                   />
                 ))}
-              </SortableContainer>
+              </SortableColors>
               <div></div>
             </div>
           </div>
@@ -154,25 +161,3 @@ export const App = () => {
 };
 
 export default App;
-
-const SortableItem = sortableElement(({ color, onDelete }) => {
-  const onClick = (e) => {
-    e.preventDefault();
-    e.stopPropagation();
-    onDelete(e);
-  };
-  return (
-    <div className={css.color}>
-      <div className={css.swatch} style={{ backgroundColor: color }} />
-      {color}
-      &nbsp;&nbsp;
-      <a href="#" onClick={onClick}>
-        &times;
-      </a>
-    </div>
-  );
-});
-
-const SortableContainer = sortableContainer(({ children }) => {
-  return <div className={css.colors}>{children}</div>;
-});

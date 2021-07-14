@@ -1,0 +1,37 @@
+.colors {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.color {
+  cursor: grab;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: #efefef;
+  margin: 0 4px 4px 0;
+  white-space: nowrap;
+  padding-right: 15px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+.color a {
+  text-decoration: none;
+  color: inherit;
+}
+/* The Sortable library creates a copy of the element being dragged in the root
+ * This hack lets us set the cursor as grabbing while grabbing
+ */
+body > .color {
+  cursor: grabbing;
+}
+.swatch {
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+  margin-right: 10px;
+  border-top: 1px solid #f4f4f4;
+  border-bottom: 1px solid #f4f4f4;
+  border-left: 1px solid #f4f4f4;
+  border-radius: 4px 0 0 4px;
+}

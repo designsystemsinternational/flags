@@ -1,25 +1,37 @@
+const path = require("path");
 const fs = require("fs");
 const { parseStringPromise } = require("xml2js");
 const axios = require("axios");
 
-const getFlagUrlFromWikimedia = async (name) => {
-  console.log(`> Getting flag url from Wikimedia...`);
+const createDirSync = (dir) => {
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir, {
+      recursive: true,
+      mode: 0o755,
+    });
+  }
+};
 
+const getFlagUrlFromWikimedia = async (name, nameOfficial) => {
+  let data;
   try {
     const res = await axios.get(
       `https://magnus-toolserver.toolforge.org/commonsapi.php?image=Flag_of_${name}.svg`
     );
-    const data = await parseStringPromise(res.data);
-    const url = data.response.file[0].urls[0].file[0];
-    if (!url) console.log(data.response);
-    return url;
+    data = await parseStringPromise(res.data);
   } catch (e) {
-    console.log(e);
+    console.error(e);
   }
+  const url = data?.response.file?.[0].urls[0].file[0];
+  if (!url) {
+    if (nameOfficial) {
+      return getFlagUrlFromWikimedia(nameOfficial);
+    }
+  }
+  return url;
 };
 
 const downloadFile = async (fileUrl, outputLocationPath, name) => {
-  console.log(`> Downloading flag...`);
   const writer = fs.createWriteStream(outputLocationPath);
   let response;
 
@@ -43,7 +55,6 @@ const downloadFile = async (fileUrl, outputLocationPath, name) => {
     });
     writer.on("close", () => {
       if (!error) {
-        console.log(`> Done.`);
         resolve(true);
       }
     });
@@ -51,6 +62,7 @@ const downloadFile = async (fileUrl, outputLocationPath, name) => {
 };
 
 module.exports = {
+  createDirSync,
   downloadFile,
   getFlagUrlFromWikimedia,
 };

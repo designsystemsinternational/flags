@@ -1,7 +1,7 @@
 @font-face {
   font-family: "F";
-  src: url("../assets/fonts/f.woff2") format("woff2"),
-    url("../assets/fonts/f.woff") format("woff");
+  src: url("./assets/f.woff2") format("woff2"),
+    url("./assets/f.woff") format("woff");
 }
 
 html {
@@ -38,6 +38,6 @@ input {
   font-size: inherit;
   font-weight: inherit;
   text-transform: uppercase;
-  padding: 2px 12px;
+  padding: 6px 12px 2px 8px;
   margin: 0;
 }
