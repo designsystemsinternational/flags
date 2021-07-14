@@ -1,6 +1,6 @@
 {
   "name": "@designsystemsinternational/flags",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Country flags and their colors",
   "main": "index.js",
   "publishConfig": {
