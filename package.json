@@ -8,7 +8,8 @@
     "flags:get": "node scripts/flags.js",
     "flags:optimize": "svgo -f ./bin/flag-raw -o ./flag",
     "flags:copy": "rm -rf ./editor/data/flag/* && cp -r ./flag ./editor/data && cp ./bin/countries-with-flag.json ./editor/data",
-    "flags:update": "npm run flags:get && npm run flags:optimize && npm run flags:copy"
+    "flags:update": "npm run flags:get && npm run flags:optimize && npm run flags:copy",
+    "release": "release-it"
   },
   "keywords": [
     "flags",
@@ -17,9 +18,10 @@
   "author": "Design Systems International",
   "license": "MIT",
   "devDependencies": {
-    "svgo": "^2.3.1",
     "axios": "^0.21.1",
     "ora": "^5.4.1",
+    "release-it": "^14.10.0",
+    "svgo": "^2.3.1",
     "world-countries": "^4.0.0",
     "xml2js": "^0.4.23"
   }
