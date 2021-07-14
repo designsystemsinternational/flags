@@ -7,5 +7,4 @@ countries.forEach((country, i) => {
   );
   country.colors = country.colors ?? countryWithColors?.colors ?? [];
 });
-console.log(countries);
 export default countries;

@@ -10,11 +10,11 @@ const {
 } = require("./utils");
 
 const OUTPUT_DIR = path.resolve(__dirname, "../bin");
-const JSON_PATH = OUTPUT_DIR + "/countries-with-flag.json";
+const JSON_PATH = path.resolve(OUTPUT_DIR, "/countries-with-flag.json");
 
 // these must be consistent with npm run svg:optimize
-const RAW_FLAG_DIR = OUTPUT_DIR + "/flag-raw/";
-const FLAG_DIR = "../flag/";
+const RAW_FLAG_DIR = path.resolve(OUTPUT_DIR, "/flag-raw/");
+const FLAG_DIR = path.resolve(OUTPUT_DIR, "../flag/");
 
 // these countries don't have a flag
 const ignore = [
