@@ -2,6 +2,10 @@
   "name": "@designsystemsinternational/flags",
   "version": "0.1.2",
   "description": "Country flags and their colors",
+  "author": "Martin Bravo <m@designsystems.international> (https://designsystems.international/)",
+  "homepage": "https://github.com/designsystemsinternational/flags",
+  "repository": "github:designsystemsinternational/flags",
+  "license": "MIT",
   "main": "index.js",
   "publishConfig": {
     "access": "public"
@@ -18,8 +22,6 @@
     "flags",
     "colors"
   ],
-  "author": "Design Systems International",
-  "license": "MIT",
   "devDependencies": {
     "axios": "^0.21.1",
     "ora": "^5.4.1",
