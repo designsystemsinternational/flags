@@ -16,6 +16,7 @@
     "flags:optimize": "svgo -f ./bin/flag-raw -o ./flag",
     "flags:copy": "rm -rf ./editor/data/flag/* && cp -r ./flag ./editor/data && cp ./bin/countries-with-flag.json ./editor/data",
     "flags:update": "npm run flags:get && npm run flags:optimize && npm run flags:copy",
+    "test" : "node test.js",
     "release": "release-it"
   },
   "keywords": [

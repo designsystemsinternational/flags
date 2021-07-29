@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import produce from "immer";
-import { moveInArray, flagsToObj } from "../utils";
+import { moveInArray } from "../utils";
 import baseFlags from "../baseFlags";
 
 import Flag from "../components/Flag";
@@ -12,22 +12,25 @@ export const Editor = () => {
   const [flags, setFlags] = useState(() => {
     if (window.localStorage.getItem("flags")) {
       const stored = JSON.parse(window.localStorage.getItem("flags"));
-      stored.forEach((item, i) => {
-        return { ...baseFlags[i], ...item };
+      Object.keys(stored).forEach((key, index) => {
+        const item = stored[key];
+        stored[key] = { ...baseFlags[index], ...item };
       });
+      console.log(stored, baseFlags);
       return stored;
+    } else {
+      return baseFlags;
     }
-    return baseFlags;
   });
 
   const [show, setShow] = useState(false);
   useEffect(() => {
-    window.localStorage.setItem("flags", JSON.stringify(flagsToObj(flags)));
+    window.localStorage.setItem("flags", JSON.stringify(flags));
   }, [flags]);
 
   const [copy, setCopy] = useState();
   const onCopy = async () => {
-    const data = JSON.stringify(flagsToObj(flags));
+    const data = JSON.stringify(flags);
     await navigator.clipboard.writeText(data);
     setCopy(true);
     setTimeout(() => setCopy(false), 3000);
@@ -45,8 +48,7 @@ export const Editor = () => {
   const onResetFlag = (name) => {
     setFlags(
       produce((draft) => {
-        const flag = draft.find((f) => f.name == name);
-        flag.colors = baseFlags.find((f) => f.name == name).colors;
+        draft[name].colors = baseFlags[name].colors;
       })
     );
   };
@@ -54,7 +56,7 @@ export const Editor = () => {
   const onSortEnd = (name, { oldIndex, newIndex }) => {
     setFlags(
       produce((draft) => {
-        const flag = draft.find((f) => f.name == name);
+        const flag = draft[name];
         if (flag) {
           moveInArray(flag.colors, oldIndex, newIndex);
         }
@@ -65,7 +67,7 @@ export const Editor = () => {
   const onDeleteColor = (name, index) => {
     setFlags(
       produce((draft) => {
-        const flag = draft.find((f) => f.name == name);
+        const flag = draft[name];
         if (flag) {
           flag.colors.splice(index, 1);
         }
@@ -73,10 +75,10 @@ export const Editor = () => {
     );
   };
 
-  const onAddColor = (color, name) => {
+  const onAddColor = (name, color) => {
     setFlags(
       produce((draft) => {
-        const flag = draft.find((f) => f.name == name);
+        const flag = draft[name];
         if (flag && !flag.colors.includes(color)) {
           flag.colors.push(color);
         }
@@ -87,7 +89,7 @@ export const Editor = () => {
   const onClear = (name) => {
     setFlags(
       produce((draft) => {
-        const flag = draft.find((f) => f.name == name);
+        const flag = draft[name];
         if (flag) {
           flag.colors = [];
         }
@@ -109,12 +111,9 @@ export const Editor = () => {
           {confirmReset ? "reset all?" : "reset all"}
         </button>
       </header>
-      {show && (
-        <pre className={css.code}>
-          {JSON.stringify(flagsToObj(flags), null, 2)}
-        </pre>
-      )}
-      {flags.map((flag, i) => {
+      {show && <pre className={css.code}>{JSON.stringify(flags, null, 2)}</pre>}
+      {Object.keys(flags).map((key, i) => {
+        const flag = flags[key];
         return (
           <div key={i} className={css.row}>
             <div className={css.left}>
@@ -124,7 +123,7 @@ export const Editor = () => {
               <Flag
                 name={flag.name}
                 className={css.flag}
-                onPick={(color) => onAddColor(color, flag.name)}
+                onPick={(color) => onAddColor(flag.name, color)}
               />
             </div>
             <div className={css.right}>
@@ -136,7 +135,7 @@ export const Editor = () => {
                 <button onClick={() => onResetFlag(flag.name)}>reset</button>
                 <input
                   onKeyPress={(e) =>
-                    e.key == "Enter" && onAddColor(e.target.value, flag.name)
+                    e.key == "Enter" && onAddColor(flag.name, e.target.value)
                   }
                   placeholder="add color"
                 />
