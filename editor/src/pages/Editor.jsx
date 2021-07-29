@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import produce from "immer";
-import { moveInArray } from "../utils";
+import { moveInArray, flagsToObj } from "../utils";
 import baseFlags from "../baseFlags";
 
 import Flag from "../components/Flag";
@@ -22,12 +22,12 @@ export const Editor = () => {
 
   const [show, setShow] = useState(false);
   useEffect(() => {
-    window.localStorage.setItem("flags", JSON.stringify(flags));
+    window.localStorage.setItem("flags", JSON.stringify(flagsToObj(flags)));
   }, [flags]);
 
   const [copy, setCopy] = useState();
   const onCopy = async () => {
-    const data = JSON.stringify(flags);
+    const data = JSON.stringify(flagsToObj(flags));
     await navigator.clipboard.writeText(data);
     setCopy(true);
     setTimeout(() => setCopy(false), 3000);
@@ -109,7 +109,11 @@ export const Editor = () => {
           {confirmReset ? "reset all?" : "reset all"}
         </button>
       </header>
-      {show && <pre className={css.code}>{JSON.stringify(flags, null, 2)}</pre>}
+      {show && (
+        <pre className={css.code}>
+          {JSON.stringify(flagsToObj(flags), null, 2)}
+        </pre>
+      )}
       {flags.map((flag, i) => {
         return (
           <div key={i} className={css.row}>

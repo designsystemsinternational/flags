@@ -163,3 +163,11 @@ export const namedColorToHex = (color) => {
     return color;
   }
 };
+
+export const flagsToObj = (flagsArray) => {
+  const flagsObj = {};
+  for (var i = 0; i < flagsArray.length; i++) {
+    flagsObj[flagsArray[i].name] = flagsArray[i];
+  }
+  return flagsObj;
+};
