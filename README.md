@@ -28,7 +28,7 @@ npm install @designsystemsinternational/flags
 ```js
 import flags from "@designsystemsinternational/flags";
 
-const chile = flags.find((f) => f.name == "Chile");
+const chile = flags["Chile"];
 
 console.log(chile);
 
@@ -42,6 +42,13 @@ console.log(chile);
 */
 
 // this would return the svg
-// with webpack and the appropriate loader or equivalent
+// with webpack and an svg loader
+// or an equivalent setup
 const flag = require(`@designsystemsinternational/flags/${chile.flag}`);
+
+// iterate through all flags
+for (flag in flags) {
+    console.log(flags[flag]);
+}
+
 ```
